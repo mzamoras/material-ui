@@ -514,6 +514,7 @@ class Menu extends Component {
       value, // eslint-disable-line no-unused-vars
       valueLink, // eslint-disable-line no-unused-vars
       width, // eslint-disable-line no-unused-vars
+      className,
       ...other
     } = this.props;
 
@@ -557,6 +558,7 @@ class Menu extends Component {
           onWheel={this.handleOnWheel}
           style={prepareStyles(mergedRootStyles)}
           ref="scrollContainer"
+          className={className || "_material_ui_menu"}
         >
           <List
             {...other}

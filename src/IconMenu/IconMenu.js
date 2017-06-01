@@ -120,6 +120,10 @@ class IconMenu extends Component {
      * layer, which will prevent clicks to the underlying elements.
      */
     useLayerForClickAway: PropTypes.bool,
+    /**
+     * Class applied to the menu element
+     */
+    menuClassName: PropTypes.string,
   };
 
   static defaultProps = {
@@ -251,6 +255,7 @@ class IconMenu extends Component {
       targetOrigin,
       touchTapCloseDelay, // eslint-disable-line no-unused-vars
       useLayerForClickAway,
+      menuClassName,
       ...other
     } = this.props;
 
@@ -299,6 +304,7 @@ You should wrapped it with an <IconButton />.`);
         onItemTouchTap={this.handleItemTouchTap}
         style={mergedMenuStyles}
         listStyle={listStyle}
+        className={menuClassName}
       >
         {this.props.children}
       </Menu>
