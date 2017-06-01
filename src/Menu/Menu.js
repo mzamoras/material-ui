@@ -154,6 +154,10 @@ class Menu extends Component {
      * proper keyline increments (64px for desktop, 56px otherwise).
      */
     width: propTypes.stringOrNumber,
+    /**
+     * Class applied to the element
+     */
+    className: PropTypes.string,
   };
 
   static defaultProps = {
@@ -567,11 +571,8 @@ class Menu extends Component {
           onWheel={this.handleOnWheel}
           style={prepareStyles(mergedRootStyles)}
           ref="scrollContainer"
-<<<<<<< HEAD
           className={className || "_material_ui_menu"}
-=======
           role="presentation"
->>>>>>> origin/master
         >
           <List
             {...other}
