@@ -102,8 +102,8 @@ const getStyles = (props, context, state) => {
 /**
  * Check if a value is valid to be displayed inside an input.
  *
- * @param value  The value to check.
- * @returns bool True if the string provided is valid, false otherwise.
+ * @param The value to check.
+ * @returns True if the string provided is valid, false otherwise.
  */
 function isValid(value) {
   return value !== '' && value !== undefined && value !== null && !(Array.isArray(value) && value.length === 0);

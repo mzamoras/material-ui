@@ -5,7 +5,7 @@ import shallowEqual from 'recompose/shallowEqual';
 import {fade} from '../utils/colorManipulator';
 import transitions from '../styles/transitions';
 import EnhancedButton from '../internal/EnhancedButton';
-import IconButton from '../IconButton/IconButton';
+import IconButton from '../IconButton';
 import OpenIcon from '../svg-icons/navigation/expand-less';
 import CloseIcon from '../svg-icons/navigation/expand-more';
 import NestedList from './NestedList';

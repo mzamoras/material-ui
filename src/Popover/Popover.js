@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import EventListener from 'react-event-listener';
 import RenderToLayer from '../internal/RenderToLayer';
 import propTypes from '../utils/propTypes';
-import Paper from '../Paper/Paper';
+import Paper from '../Paper';
 import throttle from 'lodash.throttle';
 import PopoverAnimationDefault from './PopoverAnimationDefault';
 import {isIOS, getOffsetTop} from '../utils/iOSHelpers';

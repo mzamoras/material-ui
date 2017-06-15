@@ -1,6 +1,6 @@
 import React, {Component, Children, isValidElement} from 'react';
 import PropTypes from 'prop-types';
-import Subheader from '../Subheader/Subheader';
+import Subheader from '../Subheader';
 
 class List extends Component {
   static propTypes = {
